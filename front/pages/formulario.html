@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="#">Sobre mi proyecto</a>
+        <a href="#">Historia del cine</a>
+    </nav>
+    <section style="background-color: red; display: flex; justify-content: center;">
+        <form id="form">
+            <div>
+                <label>Nombre Película</label>
+                <input type="text" placeholder="Escribir nombre de película" id="title"/>
+            </div>
+              <div>
+                <label>Nombre del director</label>
+                <input type="text" placeholder="Escribir nombre del director" id="director"/>
+            </div>
+              <div>
+                <label>Géneros</label>
+                <input type="text" placeholder="Escribir nombre del género" id="genre"/>
+            </div>
+              <div>
+                <label>Rate películas</label>
+                <input type="number" placeholder="Escribir una calificación de la película" id="rate"/>
+            </div>
+              <div>
+                <label>Creación de la película</label>
+                <input type="number" placeholder="Escribir el año de creación de la película" id="year"/>
+            </div>
+              <div>
+                <label>Duración de la película</label>
+                <input type="text" placeholder="Escribir una calificación de la película" id="duration"/>
+            </div>
+              <div>
+                <label>Poster película</label>
+                <input type="url" placeholder="Escribir nombre de película" id="url"/>
+            </div>
+            <div>
+              <button type = "submit">Enviar con submit</button>
+              <button type = "button" id = "send">Enviar sin submit</button>
+              <button type = "button" id = "Reset">Reset</button>
+            </div>
+        </form>
+    </section>
+    <script src ="../scripts/formulario.js"></script>
+</body>
+</html>

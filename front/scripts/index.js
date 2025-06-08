@@ -1,13 +1,64 @@
 
+
+
+const axios = require("axios");
+
+
 const rendercards = require("./rendercards");
-const URL = "https://students-api.up.railway.app/movies"
+// const URL = "https://students-api.up.railway.app/movies"
+const URL = "http://localhost:3000/movies"
 
 // const container = document.getElementById("container");
+// asincronismo en js
 
-$.get(URL, (response) => {
-  rendercards(response);
-});
+// callbacks
+// $.get(URL, (data) => {
+//   rendercards(data);
+// });
+
+// promesas
+// fetch
+
+// fetch(URL)
+// .then(response => response.json())
+// .then(responseJson => rendercards(data));
+// .catch(err => console.log('error', err));
+
+// axios
+
+// axios(URL).then((response) => {
+//   rendercards(response.data);
+// });
   
+// Async -await
+
+// (async () => {
+//   const response = await fetch(URL)
+//   const responseJson = response.json()
+//   rendercards(rendercards)
+// })
+
+
+// (async () => {
+//   try {
+  
+//     const response = await axios(URL);
+//     rendercards(response.data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// })();
+
+document.addEventListener("DOMContentLoaded", async () => {
+  console.log("DOM listo");
+  try {
+    const response = await axios(URL);
+    rendercards(response.data);
+  } catch (error) {
+    console.error(error);
+  }
+});
+
 //   const rendercards = (response) => { 
 //   response.forEach(movie => {
    
