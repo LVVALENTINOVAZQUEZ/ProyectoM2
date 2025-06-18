@@ -26,16 +26,5 @@ const tempData = [
     rate: 8.8,
     poster: "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
   },
-
-  {
-    title: "Jurassic Park",
-    year: 1993,
-    director: "Steven Spielberg",
-    duration: "2h 7min",
-    genre: ["Adventure", "Sci-Fi", "Thriller"],
-    rate: 8.1,
-    poster:"https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg"
-
-  },
   
 ];

@@ -1,9 +1,87 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de Películas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 2rem;
+            max-width: 600px;
+            margin: 2rem auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form div {
+            margin-bottom: 1.2rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="url"] {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            margin-right: 1rem;
+        }
+
+        button[type="button"] {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -11,43 +89,45 @@
         <a href="#">Sobre mi proyecto</a>
         <a href="#">Historia del cine</a>
     </nav>
-    <section style="background-color: red; display: flex; justify-content: center;">
+
+    <section>
         <form id="form">
             <div>
                 <label>Nombre Película</label>
                 <input type="text" placeholder="Escribir nombre de película" id="title"/>
             </div>
-              <div>
+            <div>
                 <label>Nombre del director</label>
                 <input type="text" placeholder="Escribir nombre del director" id="director"/>
             </div>
-              <div>
+            <div>
                 <label>Géneros</label>
                 <input type="text" placeholder="Escribir nombre del género" id="genre"/>
             </div>
-              <div>
+            <div>
                 <label>Rate películas</label>
                 <input type="number" placeholder="Escribir una calificación de la película" id="rate"/>
             </div>
-              <div>
+            <div>
                 <label>Creación de la película</label>
                 <input type="number" placeholder="Escribir el año de creación de la película" id="year"/>
             </div>
-              <div>
+            <div>
                 <label>Duración de la película</label>
-                <input type="text" placeholder="Escribir una calificación de la película" id="duration"/>
-            </div>
-              <div>
-                <label>Poster película</label>
-                <input type="url" placeholder="Escribir nombre de película" id="url"/>
+                <input type="text" placeholder="Escribir duración de la película" id="duration"/>
             </div>
             <div>
-              <button type = "submit">Enviar con submit</button>
-              <button type = "button" id = "send">Enviar sin submit</button>
-              <button type = "button" id = "Reset">Reset</button>
+                <label>Poster película</label>
+                <input type="url" placeholder="Escribir URL del poster" id="url"/>
+            </div>
+            <div>
+                <button type="submit">Enviar con submit</button>
+                <!-- <button type="button" id="send">Enviar sin sumit</button> -->
+                <button type="button" id="Reset">Reset</button>
             </div>
         </form>
     </section>
-    <script src ="../scripts/formulario.js"></script>
+
+    <script src="../public/form.bundle.js"></script>
 </body>
 </html>

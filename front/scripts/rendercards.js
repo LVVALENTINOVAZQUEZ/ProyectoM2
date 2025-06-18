@@ -1,7 +1,7 @@
 const container = document.getElementById("container");
 
    const rendercards = (response) => { 
-  response.forEach(movie => {
+  response.forEach((movie) => {
    
   
    const {

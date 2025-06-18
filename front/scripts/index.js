@@ -8,6 +8,8 @@ const rendercards = require("./rendercards");
 // const URL = "https://students-api.up.railway.app/movies"
 const URL = "http://localhost:3000/movies"
 
+
+
 // const container = document.getElementById("container");
 // asincronismo en js
 
