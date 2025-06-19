@@ -1,15 +1,15 @@
-/* 1. Body y tipografía general */
+
 body {
-  background-color: #333 ;      /* gris oscuro de fondo */
-  color: #fff;                 /* texto blanco */
+  background-color: #333 ;      
+  color: #fff;                 
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* 2. Header rojo con logo y menú */
+
 header {
-  background-color: #C11C22;   /* rojo intenso */
+  background-color: #C11C22;   
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -34,10 +34,10 @@ nav ul li a {
   transition: color 0.2s;
 }
 nav ul li a:hover {
-  color: #ffd700;             /* amarillo dorado al hover */
+  color: #ffd700;             
 }
 
-/* 3. Título de sección */
+
 .seccion-titulo {
   text-align: center;
   margin: 30px 0 20px;
@@ -45,7 +45,7 @@ nav ul li a:hover {
   letter-spacing: 1px;
 }
 
-/* 4. Contenedor de tarjetas */
+
 .peliculas-container {
   display: flex;
   flex-wrap: wrap;
@@ -54,9 +54,9 @@ nav ul li a:hover {
   padding: 0 20px 40px;
 }
 
-/* 5. Tarjeta individual */
+
 .tarjeta-pelicula {
-  background-color: #444;      /* un gris un poco más claro */
+  background-color: #444;      
   width: 220px;
   border-radius: 8px;
   overflow: hidden;
@@ -69,14 +69,14 @@ nav ul li a:hover {
   box-shadow: 0 8px 16px rgba(0,0,0,0.5);
 }
 
-/* 6. Imagen */
+
 .tarjeta-pelicula img {
   width: 100%;
   display: block;
   border-bottom: 2px solid #fff;
 }
 
-/* 7. Título como enlace */
+
 .tarjeta-pelicula h3 {
   margin: 12px 0 8px;
   font-size: 1em;
@@ -91,7 +91,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* 8. Datos adicionales */
+
 .tarjeta-pelicula p {
   font-size: 0.85em;
   color: #ddd;
@@ -99,7 +99,7 @@ nav ul li a:hover {
   text-align: left;
 }
 
-/* 9. Footer */
+
 footer {
   background-color: #222;
   text-align: center;
@@ -109,7 +109,7 @@ footer {
 
   
 
-/* index.css */
+
 .h1-effect {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

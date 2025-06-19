@@ -22,11 +22,11 @@ const container = document.getElementById("container");
 
 
   const cardContainer = document.createElement("div");
-  // justo después de crear el div
-cardContainer.classList.add('tarjeta-pelicula');
+  
+  cardContainer.classList.add('tarjeta-pelicula');
 
 
-  //Creamos los elementos para añadir al DOM
+ 
 
   const title_ele = document.createElement("p");
   title_ele.classList.add("text-warning", "fs-5");
@@ -38,7 +38,6 @@ cardContainer.classList.add('tarjeta-pelicula');
   const poster_ele = document.createElement("img");
 
 
-  //Agregamos información a los elementos
   title_ele.textContent = title
   year_ele.textContent = year
   director_ele.textContent = director
@@ -47,12 +46,7 @@ cardContainer.classList.add('tarjeta-pelicula');
   rate_ele.textContent = rate
   poster_ele.src = poster;
 
-  // Agregamos los elementos al contenedor card
-
-  //appendchild - forma larga 
-  // cardContainer.appendChild("title_ele")
-
-  // append - forma corta
+  
 
   cardContainer.append(
     poster_ele,
@@ -64,7 +58,6 @@ cardContainer.classList.add('tarjeta-pelicula');
     rate_ele,
   );
 
-  // Agregamos el container card a el contenedor
 
   container.appendChild(cardContainer);
 });

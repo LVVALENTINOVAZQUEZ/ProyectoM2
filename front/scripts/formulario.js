@@ -4,7 +4,6 @@ const axios =  require("axios");
 
 const URL = "http://localhost:3000/movies"
 
-// const button_send = document.getElementById("send");
 const form_item = document.getElementById("form");
 const button_reset = document.getElementById('Reset');
 
@@ -40,16 +39,6 @@ poster: url_item.value,
   }
 };
 
-
-// fetch(URL, {
-//     method:"Post",
-//     body: JSON.stringify(data),
-//     headers: {
-//     "content-type": "application/json"}
-// });
-// console.log('tenemos data', data);
-
-// };
 
 
 const reset = () => {
@@ -87,12 +76,6 @@ form_item.addEventListener("submit", (e) => {
   }
 });
 
-// button_send.addEventListener('click', (e) => {
-//   e.preventDefault();
-//   if (validar()) {
-//     send();
-//   }
-// });
 
 button_reset.addEventListener('click', reset);
 
