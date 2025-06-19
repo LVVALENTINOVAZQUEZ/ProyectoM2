@@ -26,17 +26,27 @@ const {
 } = require("../services/movies");
 
 const getControllerMovies = async (req, res) => {
-  const movies = await getMoviesService();
-  res.json(movies);
+  try {
+    const movies = await getMoviesService();
+    return res.json(movies);
+
+  }catch (error) {
+    console.error(error);
+    return res.status(500).json({ error: "Error al obtener películas" })
+  }
 };
 
 const postControllerMovies = async (req, res) => {
-  const { body } = req;
-  console.log("vemos el body", body);
-
-  await createMovieService(body);
-
-  res.send("película creada correctamente");
+  try{
+      const movie = await createMovieService(req.body);
+    return res
+      .status(201)
+      .json({ message: "Película creada correctamente", movie });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ error: "Error al crear la película" });
+  }
+ 
 };
 
 module.exports = {
